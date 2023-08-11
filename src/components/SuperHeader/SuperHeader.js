@@ -7,9 +7,11 @@ import SearchInput from '../SearchInput';
 import UnstyledButton from '../UnstyledButton';
 import Icon from '../Icon';
 
-const SuperHeader = () => {
+const SuperHeader = ({ className }) => {
   return (
-    <Wrapper>
+    <Wrapper
+      className = {className}
+    >
       <MarketingMessage>
         Free shipping on domestic orders over $75!
       </MarketingMessage>
