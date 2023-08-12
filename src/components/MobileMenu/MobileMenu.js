@@ -98,7 +98,7 @@ const Wrapper = styled(DialogOverlay)`
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: hsla(220, 5%, 40%, 0.8);
+  background-color: hsla(var(--hsl-format-gray-700-color), 0.8);
 `;
 
 const ContentContainer = styled(DialogContent)`

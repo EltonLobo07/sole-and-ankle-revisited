@@ -78,14 +78,15 @@ html, body, #root {
 }
 
 :root {
-  --white-color: hsl(0deg 0% 100%);
-  --gray-100-color: hsl(185deg 5% 95%);
-  --gray-300-color: hsl(190deg 5% 80%);
-  --gray-500-color: hsl(196deg 4% 60%);
-  --gray-700-color: hsl(220deg 5% 40%);
-  --gray-900-color: hsl(220deg 3% 20%);
-  --primary-color: hsl(340deg 65% 47%);
-  --secondary-color: hsl(240deg 60% 63%);
+  --hsl-format-gray-700-color: 220deg, 5%, 40%; 
+  --white-color: hsl(0deg, 0%, 100%);
+  --gray-100-color: hsl(185deg, 5%, 95%);
+  --gray-300-color: hsl(190deg, 5%, 80%);
+  --gray-500-color: hsl(196deg, 4%, 60%);
+  --gray-700-color: hsl(var(--hsl-format-gray-700-color));
+  --gray-900-color: hsl(220deg, 3%, 20%);
+  --primary-color: hsl(340deg, 65%, 47%);
+  --secondary-color: hsl(240deg, 60%, 63%);
   --normal-font-weight: 500;
   --medium-font-weight: 600;
   --bold-font-weight: 700;
