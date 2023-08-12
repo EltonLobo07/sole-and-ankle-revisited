@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import { BREAKPOINTS_IN_REMS, COLORS, WEIGHTS } from '../../constants';
+import { BREAKPOINTS_IN_REMS } from '../../constants';
 import Logo from '../Logo';
 import SuperHeader from '../SuperHeader';
 import MobileMenu from '../MobileMenu';
@@ -85,7 +85,7 @@ const MainHeader = styled.div`
   display: flex;
   align-items: baseline;
   padding: 18px 32px;
-  border-bottom: 1px solid ${COLORS.gray[300]};
+  border-bottom: 1px solid var(--gray-300-color);
   overflow-x: auto;
 `;
 
@@ -103,11 +103,11 @@ const NavLink = styled.a`
   font-size: 1.125rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: ${COLORS.gray[900]};
-  font-weight: ${WEIGHTS.medium};
+  color: var(--gray-900-color);
+  font-weight: var(--medium-font-weight);
 
   &:first-of-type {
-    color: ${COLORS.secondary};
+    color: var(--secondary-color);
   }
 `;
 

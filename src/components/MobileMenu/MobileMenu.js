@@ -3,10 +3,8 @@ import React from 'react';
 import styled from 'styled-components/macro';
 import { DialogOverlay, DialogContent } from '@reach/dialog';
 
-import UnstyledButton from '../UnstyledButton';
 import Icon from '../Icon';
 import VisuallyHidden from '../VisuallyHidden';
-import { COLORS } from '../../constants';
 
 const MobileMenu = ({ isOpen, onDismiss }) => {
   if (!isOpen) {
@@ -64,16 +62,16 @@ const Nav = styled.nav`
   flex-direction: column;
   row-gap: ${22 / 16}rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: var(--medium-font-weight);
   font-size: ${18 / 16}rem;
 
   & a {
     text-decoration: none;
-    color: ${COLORS.gray[900]};
+    color: var(--gray-900-color);
   }
 
   & a.active-link {
-    color: ${COLORS.secondary};
+    color: var(--secondary-color);
   }
 `;
 
@@ -84,8 +82,8 @@ const Footer = styled.footer`
 
   & a {
     text-decoration: none;
-    color: ${COLORS.gray[700]};
-    font-weight: 500;
+    color: var(--gray-700-color);
+    font-weight: var(--normal-font-weight);
     font-size: ${14 / 16}rem;
   }
 `;
@@ -108,7 +106,7 @@ const ContentContainer = styled(DialogContent)`
   top: 0;
   bottom: 0;
   right: 0;
-  background-color: ${COLORS.white};
+  background-color: var(--white-color);
   padding: 32px;
   display: flex;
   flex-direction: column;

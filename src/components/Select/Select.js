@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import { COLORS, WEIGHTS } from '../../constants';
-
 import Icon from '../Icon';
 
 const Select = ({ label, value, children, className, ...delegated }) => {
@@ -41,7 +39,7 @@ const Wrapper = styled.label`
 `;
 
 const VisibleLabel = styled.span`
-  color: ${COLORS.gray[700]};
+  color: var(--gray-700-color);
   margin-right: 16px;
 `;
 
@@ -63,10 +61,10 @@ const NativeSelect = styled.select`
 
 const DisplayedBit = styled.span`
   display: block;
-  background: ${COLORS.gray[100]};
+  background: var(--gray-100-color);
   font-size: 1rem;
-  font-weight: ${WEIGHTS.medium};
-  color: ${COLORS.gray[900]};
+  font-weight: var(--medium-font-weight);
+  color: var(--gray-900-color);
   padding: 12px 42px 12px 16px;
   border-radius: 8px;
   pointer-events: none;
