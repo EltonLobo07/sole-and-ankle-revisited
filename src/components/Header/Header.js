@@ -85,13 +85,13 @@ const MainHeader = styled.div`
   display: flex;
   align-items: baseline;
   padding: 18px 32px;
-  height: 72px;
   border-bottom: 1px solid ${COLORS.gray[300]};
+  overflow-x: auto;
 `;
 
 const Nav = styled.nav`
   display: flex;
-  gap: 48px;
+  gap: clamp(1rem, 8.2vw - 3.25rem, 3rem); // 48px
   margin: 0px 48px;
 
   @media (max-width: ${BREAKPOINTS_IN_REMS.tabletMax}rem) {
